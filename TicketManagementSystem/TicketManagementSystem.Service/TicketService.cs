@@ -8,6 +8,7 @@ using TicketManagementSystem.DomainTier.Accounts;
 using TicketManagementSystem.DomainTier.eNums;
 using TicketManagementSystem.DomainTier.ErrorHandler;
 using TicketManagementSystem.DomainTier.Models;
+using TicketManagementSystem.Service.Interfaces;
 using TicketManagementSystem.Service.Repositories.Tickets;
 using TicketManagementSystem.Service.Repositories.Tickets.Interface;
 using TicketManagementSystem.Service.Repositories.Users;
@@ -15,7 +16,7 @@ using TicketManagementSystem.Service.Repositories.Users.Interfaces;
 
 namespace TicketManagementSystem.Service.Repositories.Tickets
 {
-    public class TicketService
+    public class TicketService: ITicketService
     {
         private readonly IUserRepository _userRepository;
         private readonly IEmailService _emailService;
