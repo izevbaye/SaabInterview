@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Email\EmailService\EmailService.csproj" />
+    <ProjectReference Include="..\TicketManagementSystem.DomainTier\TicketManagementSystem.DomainTier.csproj" />
+    <ProjectReference Include="..\TicketManagementSystem.Service.Repositories.Tickets\TicketManagementSystem.Service.Repositories.Tickets.csproj" />
+    <ProjectReference Include="..\TicketManagementSystem.Service.Repositories.Users\TicketManagementSystem.Service.Repositories.Users.csproj" />
+  </ItemGroup>
+
+</Project>
